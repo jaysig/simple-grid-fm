@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700)
+
+$phoneBreakpoint: 450px
+$cyan: hsl(179, 62%, 43%)
+$yellow: hsl(71, 73%, 54%)
+$lightGray: hsl(204, 43%, 93%)
+$grayBlue: hsl(218, 22%, 67%)
+$midCyan: hsl(179, 47%, 52%)
+// $lightCyan: hsl(180, 51%, 57%)
+
+
+body
+    font-size: 16px
+    background-color: $lightGray
+    font-family: Karla
+    font-weight: 400
+
+// GRID
+.card
+    display: grid
+    grid-template-rows: 1fr, 1fr
+    margin: 150px 450px
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,.3)
+    background-color: white
+    border-radius: 4px
+
+// .container
+    
+
+.details
+    display: grid
+    grid-row: 2
+    grid-template-columns: 1fr, 1fr
+
+
+.no-margin
+    margin: 0
+
+// Community
+.community
+    display: grid
+    grid-row: 1/2
+    padding: 25px
+    h1
+        color: $cyan
+    h3
+        color: $yellow
+        margin: 5px 0
+    p
+        color: $grayBlue
+
+// Monthly
+.monthly
+    display: grid
+    grid-column: 1/2
+    background-color: $cyan
+    padding: 25px
+    color: $lightGray
+
+.per-month
+    color: $midCyan
+    font-weight: 700
+
+.price
+    color: $lightGray
+    font-size: 2rem
+    padding-right: 20px
+    font-weight: 700
+
+//Why
+.why
+    display: grid
+    grid-column: 2
+    background-color: $midCyan
+    padding: 25px
+    color: $lightGray
+    font-weight: 700
+    ul
+        padding: 0
+    li
+        list-style: none
+        margin: 2px 0
+        color: $lightGray
+        font-size: .8rem
+        font-weight: 100

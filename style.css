@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+body {
+  font-size: 16px;
+  background-color: #e5eff5;
+  font-family: Karla;
+  font-weight: 400;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  margin: 150px 450px;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 4px;
+}
+
+.details {
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: 1fr, 1fr;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.community {
+  display: grid;
+  grid-row: 1/2;
+  padding: 25px;
+}
+.community h1 {
+  color: #2ab2af;
+}
+.community h3 {
+  color: #c0df34;
+  margin: 5px 0;
+}
+.community p {
+  color: #98a6bd;
+}
+
+.monthly {
+  display: grid;
+  grid-column: 1/2;
+  background-color: #2ab2af;
+  padding: 25px;
+  color: #e5eff5;
+}
+
+.per-month {
+  color: #4bbebc;
+  font-weight: 700;
+}
+
+.price {
+  color: #e5eff5;
+  font-size: 2rem;
+  padding-right: 20px;
+  font-weight: 700;
+}
+
+.why {
+  display: grid;
+  grid-column: 2;
+  background-color: #4bbebc;
+  padding: 25px;
+  color: #e5eff5;
+  font-weight: 700;
+}
+.why ul {
+  padding: 0;
+}
+.why li {
+  list-style: none;
+  margin: 2px 0;
+  color: #e5eff5;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=style.css.map */
