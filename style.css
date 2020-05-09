@@ -8,17 +8,28 @@ body {
 
 .card {
   display: grid;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
   margin: 150px 450px;
   box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.3);
   background-color: white;
   border-radius: 4px;
 }
+@media (max-width: 450px) {
+  .card {
+    margin: 100px 25px 40px 25px;
+    display: block;
+  }
+}
 
 .details {
   display: grid;
   grid-row: 2;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 450px) {
+  .details {
+    display: block;
+  }
 }
 
 .no-margin {
@@ -30,15 +41,28 @@ body {
   grid-row: 1/2;
   padding: 25px;
 }
-.community h1 {
+.community h2 {
   color: #2ab2af;
 }
 .community h3 {
   color: #c0df34;
-  margin: 5px 0;
+  margin: 0;
 }
 .community p {
   color: #98a6bd;
+  line-height: 1.5;
+}
+@media (max-width: 450px) {
+  .community {
+    display: block;
+  }
+  .community h3 {
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+  .community p {
+    padding-right: 20px;
+  }
 }
 
 .monthly {
@@ -48,10 +72,21 @@ body {
   padding: 25px;
   color: #e5eff5;
 }
+@media (max-width: 450px) {
+  .monthly {
+    grid-column: none;
+    grid-row: 1/2;
+  }
+}
 
 .per-month {
   color: #4bbebc;
   font-weight: 700;
+}
+@media (max-width: 450px) {
+  .per-month {
+    margin: 20px 0 10px 0;
+  }
 }
 
 .price {
@@ -59,6 +94,26 @@ body {
   font-size: 2rem;
   padding-right: 20px;
   font-weight: 700;
+}
+
+.signup {
+  background-color: #c0df34;
+  margin-right: 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  .signup {
+    margin-top: 10px;
+  }
+}
+.signup p {
+  margin: 10px 0 0 0;
+}
+@media (max-width: 450px) {
+  .signup p {
+    margin-bottom: 10px;
+  }
 }
 
 .why {
@@ -69,8 +124,15 @@ body {
   color: #e5eff5;
   font-weight: 700;
 }
+@media (max-width: 450px) {
+  .why {
+    grid-column: none;
+    grid-row: 2;
+  }
+}
 .why ul {
   padding: 0;
+  margin-right: 60px;
 }
 .why li {
   list-style: none;
